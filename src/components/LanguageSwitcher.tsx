@@ -46,7 +46,7 @@ export default function LanguageSwitcher() {
               <button
                 key={lang.code}
                 onClick={() => changeLanguage(lang.code)}
-                className={`w-full flex items-center gap-3 px-4 py-2 text-left hover:bg-bg-secondary hover:text-white transition-colors cursor-pointer ${
+                className={`w-full flex items-center gap-3 px-4 py-2 text-left hover:bg-bg-secondary hover:text-primary/80 transition-colors cursor-pointer ${
                   i18n.language === lang.code
                     ? "bg-primary/10 text-primary"
                     : "text-text-primary"

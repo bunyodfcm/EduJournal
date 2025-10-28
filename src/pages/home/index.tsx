@@ -3,6 +3,7 @@ import AcademicPlatforms from "./components/academic-platforms";
 import ArchiveSection from "./components/archive-section";
 import EditorialBoard from "./components/editorial-board";
 import AboutJournal from "./components/about-journal";
+import ContactSection from "./components/ContactSection";
 
 const HomePage = () => {
   return (
@@ -12,6 +13,7 @@ const HomePage = () => {
       <AboutJournal />
       <ArchiveSection />
       <EditorialBoard />
+      <ContactSection />
     </div>
   );
 };
