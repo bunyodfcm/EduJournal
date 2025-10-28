@@ -7,7 +7,7 @@
 
   /* Background ranglar */
   --color-bg-primary: #fafaf5;
-  --color-bg-secondary: #001f3d;
+  --color-bg-secondary: #F2F1E9;
   --color-bg-tertiary: #f1f5f9;
 
   /* Text ranglar */
@@ -57,5 +57,5 @@ body {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: inherit 16px;
 }
