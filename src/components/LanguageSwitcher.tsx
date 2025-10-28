@@ -12,7 +12,8 @@ export default function LanguageSwitcher() {
   const { i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
 
-  const currentLang = languages.find((lang) => lang.code === i18n.language) || languages[0];
+  const currentLang =
+    languages.find((lang) => lang.code === i18n.language) || languages[0];
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -27,17 +28,17 @@ export default function LanguageSwitcher() {
       >
         <Icon icon={currentLang.icon} width="20" height="20" />
         <span>{currentLang.label}</span>
-        <Icon 
-          icon={isOpen ? "mdi:chevron-up" : "mdi:chevron-down"} 
-          width="20" 
-          height="20" 
+        <Icon
+          icon={isOpen ? "mdi:chevron-up" : "mdi:chevron-down"}
+          width="20"
+          height="20"
         />
       </button>
 
       {isOpen && (
         <>
-          <div 
-            className="fixed inset-0 z-10" 
+          <div
+            className="fixed inset-0 z-10"
             onClick={() => setIsOpen(false)}
           ></div>
           <div className="absolute right-0 top-full mt-2 w-48 bg-white border border-border rounded-lg shadow-lg z-20 overflow-hidden">
@@ -46,7 +47,9 @@ export default function LanguageSwitcher() {
                 key={lang.code}
                 onClick={() => changeLanguage(lang.code)}
                 className={`w-full flex items-center gap-3 px-4 py-2 text-left hover:bg-bg-secondary hover:text-white transition-colors cursor-pointer ${
-                  i18n.language === lang.code ? "bg-primary/10 text-primary" : "text-text-primary"
+                  i18n.language === lang.code
+                    ? "bg-primary/10 text-primary"
+                    : "text-text-primary"
                 }`}
               >
                 <Icon icon={lang.icon} width="20" height="20" />

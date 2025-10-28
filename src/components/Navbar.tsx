@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "./LanguageSwitcher";
 
@@ -15,33 +15,52 @@ const Navbar = () => {
 
           <ul className="flex gap-4">
             <li>
-              <Link to="/" className="hover:text-primary transition-colors">
+              <NavLink
+                to="/"
+                className={({ isActive }) =>
+                  `transition-colors px-5 py-2 rounded-full hover:bg-primary/10 hover:text-primary ${
+                    isActive ? "bg-primary text-white font-semibold" : ""
+                  }`
+                }
+              >
                 {t("navbar.home")}
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/about"
-                className="hover:text-primary transition-colors"
+                className={({ isActive }) =>
+                  `transition-colors px-5 py-2 rounded-full hover:bg-primary/10 hover:text-primary ${
+                    isActive ? "bg-primary text-white font-semibold" : ""
+                  }`
+                }
               >
                 {t("navbar.about")}
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/archive"
-                className="hover:text-primary transition-colors"
+                className={({ isActive }) =>
+                  `transition-colors px-5 py-2 rounded-full hover:bg-primary/10 hover:text-primary ${
+                    isActive ? "bg-primary text-white font-semibold" : ""
+                  }`
+                }
               >
                 {t("navbar.archive")}
-              </Link>
+              </NavLink>
             </li>
             <li>
-              <Link
+              <NavLink
                 to="/editorial-office"
-                className="hover:text-primary transition-colors"
+                className={({ isActive }) =>
+                  `transition-colors px-5 py-2 rounded-full hover:bg-primary/10 hover:text-primary ${
+                    isActive ? "bg-primary text-white font-semibold" : ""
+                  }`
+                }
               >
                 {t("navbar.editorialOffice")}
-              </Link>
+              </NavLink>
             </li>
           </ul>
           <LanguageSwitcher />
