@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "home": "Bosh sahifa",
+    "about": "Haqida",
+    "archive": "Arxiv",
+    "editorialOffice": "Tahririyat",
+    "contact": "Aloqa"
+  },
+  "home": {
+    "title": "Xush kelibsiz",
+    "description": "Ilmiy jurnalga xush kelibsiz"
+  },
+  "about": {
+    "title": "Biz haqimizda",
+    "description": "Bu sahifa biz haqimizda ma'lumot beradi"
+  },
+  "common": {
+    "readMore": "Ko'proq o'qish",
+    "submit": "Yuborish",
+    "cancel": "Bekor qilish",
+    "loading": "Yuklanmoqda...",
+    "error": "Xato yuz berdi",
+    "success": "Muvaffaqiyatli"
+  }
+}
+

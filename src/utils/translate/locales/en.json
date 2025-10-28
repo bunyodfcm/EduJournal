@@ -1,0 +1,26 @@
+{
+  "navbar": {
+    "home": "Home",
+    "about": "About",
+    "archive": "Archive",
+    "editorialOffice": "Editorial Office",
+    "contact": "Contact"
+  },
+  "home": {
+    "title": "Welcome",
+    "description": "Welcome to the scientific journal"
+  },
+  "about": {
+    "title": "About Us",
+    "description": "This page provides information about us"
+  },
+  "common": {
+    "readMore": "Read More",
+    "submit": "Submit",
+    "cancel": "Cancel",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "success": "Success"
+  }
+}
+
