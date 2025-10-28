@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import { useTranslation } from 'react-i18next';
-import LanguageSwitcher from './LanguageSwitcher';
+import { useTranslation } from "react-i18next";
+import LanguageSwitcher from "./LanguageSwitcher";
 
 const Navbar = () => {
   const { t } = useTranslation();
@@ -15,16 +15,33 @@ const Navbar = () => {
 
           <ul className="flex gap-4">
             <li>
-              <Link to="/" className="hover:text-primary transition-colors">{t('navbar.home')}</Link>
+              <Link to="/" className="hover:text-primary transition-colors">
+                {t("navbar.home")}
+              </Link>
             </li>
             <li>
-              <Link to="/about" className="hover:text-primary transition-colors">{t('navbar.about')}</Link>
+              <Link
+                to="/about"
+                className="hover:text-primary transition-colors"
+              >
+                {t("navbar.about")}
+              </Link>
             </li>
             <li>
-              <Link to="/archive" className="hover:text-primary transition-colors">{t('navbar.archive')}</Link>
+              <Link
+                to="/archive"
+                className="hover:text-primary transition-colors"
+              >
+                {t("navbar.archive")}
+              </Link>
             </li>
             <li>
-              <Link to="/editorial-office" className="hover:text-primary transition-colors">{t('navbar.editorialOffice')}</Link>
+              <Link
+                to="/editorial-office"
+                className="hover:text-primary transition-colors"
+              >
+                {t("navbar.editorialOffice")}
+              </Link>
             </li>
           </ul>
           <LanguageSwitcher />
