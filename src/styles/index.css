@@ -1,5 +1,58 @@
 @import "tailwindcss";
 
+/* Ranglar (Light Mode uchun) */
+@theme {
+  /* Asosiy ranglar */
+  --color-primary: #0068cb;
+
+  /* Background ranglar */
+  --color-bg-primary: #fafaf5;
+  --color-bg-secondary: #001f3d;
+  --color-bg-tertiary: #f1f5f9;
+
+  /* Text ranglar */
+  --color-text-primary: #111827;
+  --color-text-secondary: #515d69;
+  --color-text-title: #0a87ed;
+
+  /* Border ranglar */
+  --color-border: #DDE4EB;
+  --color-border-light: #f1f5f9;
+
+  /* Accent ranglar */
+  --color-accent: #fff;
+  --color-accent-hover: #fff;
+
+  /* Status ranglar */
+  --color-success: #fff;
+  --color-warning: #fff;
+  --color-error: #fff;
+  --color-info: #fff;
+
+  /* Shadow */
+  --shadow-sm: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+  --shadow-md: 0 4px 6px -1px rgb(0 0 0 / 0.1 rpmd);
+  --shadow-lg: 0 10px 15px -3px rgb(0 0 0 / 0.1);
+
+  /* Fontlar */
+  --font-primary: "IBM Plex Sans", sans-serif;
+}
+
+/* Global CSS variables */
+:root {
+  --transition-fast: 150ms ease-in-out;
+  --transition-base: 250ms ease-in-out;
+  --transition-slow: 350ms ease-in-out;
+}
+
+body {
+  font-family: var(--font-primary);
+  color: var(--color-text-primary);
+  background-color: var(--color-bg-primary);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
 .container {
   width: 100%;
   max-width: 1200px;
