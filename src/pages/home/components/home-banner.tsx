@@ -1,7 +1,9 @@
 import Button from "../../../components/shared/button";
 import { bannerImage } from "../../../assets/images-links";
 
-const HomeBanner = () => {
+const HomeBanner = ({ meta }: { meta: any }) => {
+  console.log(meta);
+  
   return (
     <div className="container">
       <div className="py-10 flex flex-col md:flex-row items-center justify-between gap-8 md:gap-10">
