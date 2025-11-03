@@ -9,9 +9,8 @@ import { useContent } from "../../utils/hooks/useContent";
 // import { useSingleUser } from "../../utils/hooks/useSingleUser";
 
 const HomePage: React.FC = () => {
-  const { content, loading, employees, error } =
-    useContent("activity/journals");
-  // console.log(employees as any);
+  const { content, loading, error } = useContent("activity/journals");
+  console.log(content as any);
 
   // const langData = useLangData((content as any)?.data.editors.items[0]);
 
@@ -24,7 +23,7 @@ const HomePage: React.FC = () => {
 
   return (
     <div className="py-12">
-      <HomeBanner meta={(content as any)?.data?.meta} />
+      <HomeBanner />
       <AcademicPlatforms />
       <AboutJournal />
       <ArchiveSection />
